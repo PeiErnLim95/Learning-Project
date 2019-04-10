@@ -1,2 +1,3 @@
-# Learning-Project
-These are the projects that I created while follow along with the tutorials.
+# Shopping List App
+
+This is a simple shopping list application made by MERN Stack.
