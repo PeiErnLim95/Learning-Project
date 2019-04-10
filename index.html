@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Draw | Your Smart Drawing Application</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body style="margin:0;">
+
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html">Smart Draw</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item">
+      	  				<a class="nav-link" href="draw.html" style="color:#ffffff">Draw<span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item">
+      	  				<a id="save" class="nav-link" href="#">Save To Local</a>
+      				</li>
+    			</ul>
+  			</div>
+		</nav>
+	</div>
+
+	<div id="toolbar">
+		<div id="radius">
+			Radius =  <span id="rvalue" style="border-width: 2px; border-color: #ffffff; border-style: solid; padding:5px;">5</span>
+			<div id="rin" class="rcontroller">+</div>
+			<div id="rdec" class="rcontroller">-</div>
+		</div>
+
+		<div id="colors">
+		</div>
+
+		<div id="clear">
+			Clear
+		</div>
+
+	</div>
+
+	<canvas id="canvas" style="display:block;">
+		Sorry, your browser does not support HTML Canvas.
+	</canvas>
+
+	<script src="main.js"></script>
+	<script src="radius.js"></script>
+	<script src="colors.js"></script>
+	<script src="save.js"></script>
+	<script src="clear.js"></script>
+
+</body>
+</html>
