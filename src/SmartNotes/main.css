@@ -1,0 +1,46 @@
+.note {
+  height: auto; 
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 60%;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #222222;
+  background-color: #eeddca; 
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #333333;
+  opacity: 0.8;
+}
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:0.8; } }
+@keyframes fadeOut { from { opactiy:0.8; } to { opacity:0; } }
+
+.fade-in {
+    opacity:0;
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration: 0.3s;
+}
+
+.noteContent{
+  float:left;
+  padding:20px;
+  display: block;
+}
+
+.closeButton {
+    color: #ffffff;
+    margin:15px;
+    float:right;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.closeButton:hover {
+    color: #000000;
+    background-color:crimson;
+}
